@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giới thiệu bản thân | VIP</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+.card{
+    width:340px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border-radius:20px;
+    padding:30px 20px;
+    text-align:center;
+    box-shadow:0 0 30px rgba(0,0,0,0.6);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-8px);}
+}
+
+.avatar{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    border:4px solid #00f2ff;
+    object-fit:cover;
+    box-shadow:0 0 20px #00f2ff;
+}
+
+h2{
+    margin-top:15px;
+    font-size:22px;
+    letter-spacing:1px;
+}
+
+.tag{
+    margin-top:6px;
+    font-size:14px;
+    opacity:0.85;
+}
+
+.line{
+    width:60%;
+    height:2px;
+    background:linear-gradient(to right,transparent,#00f2ff,transparent);
+    margin:15px auto;
+}
+
+.social{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    margin-top:10px;
+}
+
+.social a{
+    text-decoration:none;
+    color:white;
+    padding:12px;
+    border-radius:30px;
+    font-size:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    transition:0.3s;
+}
+
+.fb{ background:#1877f2; }
+.tt{ background:#000; }
+.zalo{ background:#00bfff; }
+
+.social a:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 15px rgba(255,255,255,0.5);
+}
+
+.footer{
+    margin-top:18px;
+    font-size:12px;
+    opacity:0.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <!-- 🔴 (1) ẢNH ĐẠI DIỆN -->
+    <img src="avatar.jpg" class="avatar">
+
+    <!-- 🔴 (2) TÊN -->
+    <h2>Hùng</h2>
+
+    <!-- 🔴 (3) MÔ TẢ -->
+    <div class="tag">Học sinh | 10C1 ⚡</div>
+
+    <div class="line"></div>
+
+    <!-- 🔴 (4) LINK MẠNG XÃ HỘI -->
+    <div class="social">
+
+        <!-- FACEBOOK -->
+        <a class="fb" href="https://www.facebook.com/share/1C3njrLSk9/" target="_blank">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+
+        <!-- TIKTOK -->
+        <a class="tt" href="https://www.tiktok.com/@hu.d.p?_r=1&_t=ZS-930AKpN3N2u" target="_blank">
+            <i class="fab fa-tiktok"></i> TikTok
+        </a>
+
+        <!-- ZALO (ẨN SỐ) -->
+        <a class="zalo" href="https://zalo.me/84962969042" target="_blank">
+            <i class="fas fa-comment-dots"></i> Liên hệ Zalo
+        </a>
+
+    </div>
+
+    <div class="footer">
+        © 2026 | Made by Hùng 🔥
+    </div>
+
+</div>
+
+</body>
+</html>
